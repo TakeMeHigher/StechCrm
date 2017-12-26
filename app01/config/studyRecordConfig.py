@@ -67,5 +67,8 @@ class StudyRecordConfig(v1.StarkConfig):
 
     leave_early.short_desc='早退'
 
+
     show_action = True
     action_func_list = [checked,vacate,late,noshow,leave_early]
+
+    add_btn = False

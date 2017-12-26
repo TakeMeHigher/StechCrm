@@ -33,11 +33,14 @@ class CourseRecordConfig(v1.StarkConfig):
         ]
 
         return url_list
+
+    #录入成绩
     def inputScore(self,request,cr_id):
         if request.method=='GET':
             studyRecord_list=models.StudyRecord.objects.filter(course_record_id=cr_id)
             data=[]
             for studyRecord in studyRecord_list:
+                #动态生成form
                 SRForm=type('SRForm',(Form,),{
                     'score_%s'%studyRecord.id : fields.ChoiceField(models.StudyRecord.score_choices),
                     'homework_note_%s'%studyRecord.id :fields.ChoiceField(widget=widgets.Textarea(attrs={"style":'width:395px;height:45px'}))
@@ -64,7 +67,7 @@ class CourseRecordConfig(v1.StarkConfig):
                     models.StudyRecord.objects.filter(id=id).update(**dic)
 
 
-            return redirect(request.path_info)
+            return redirect(self.get_list_url())
 
 
 

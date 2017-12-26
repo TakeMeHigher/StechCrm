@@ -556,7 +556,9 @@ class StarkConfig(object):
                     # print(relate_name,'relate_name',type(relate_name))
                     #当前对象反向关联的字段
                     for related_obj in new_obj._meta.related_objects:
+                        #获取类名
                         _model_name=related_obj.field.model._meta.model_name
+                        #获取related_name字段
                         _related_name=related_obj.related_name
                         # print(_model_name,'_model_name')
                         # print(_related_name,'_related_name')

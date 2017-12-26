@@ -18,9 +18,6 @@ class SchoolConfig(v1.StarkConfig):
 
     multi_del.short_desc = '批量删除'
 
-    def multi_info(self, request):
-        pass
 
-    multi_info.short_desc = '批量初始化'
     show_combine_seach = True
-    action_func_list = [multi_del, multi_info]
+    action_func_list = [multi_del]
