@@ -39,7 +39,7 @@ class StudentConfig(v1.StarkConfig):
             cid=request.GET.get('cid')
             #student_id
             sid=request.GET.get('sid')
-            studyRecord_list=models.StudyRecord.objects.filter(course_record__class_obj_id=cid,student_id=sid)
+            studyRecord_list=models.StudyRecord.objects.filter(course_record__class_obj_id=cid,student_id=sid).order_by('course_record_id')
             print(studyRecord_list)
             data=[]
             for studyRecord in studyRecord_list:

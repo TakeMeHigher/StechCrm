@@ -1,7 +1,9 @@
+from django.db.models import Q
 from django.utils.safestring import mark_safe
-from django.shortcuts import redirect
+from django.shortcuts import redirect,HttpResponse,render
 from django.http import QueryDict
 from django.conf.urls import url
+from app01 import models
 
 from stark.service import v1
 
@@ -64,12 +66,14 @@ class CustomerConfig(v1.StarkConfig):
             return '跟进记录'
         return  mark_safe('<a href="/stark/app01/consultrecord/?customer=%s">查看跟进记录</a>'%(obj.pk))
 
-
-
+    def status_display(self,obj=None,is_head=False):
+        if is_head:
+            return '状态'
+        return obj.get_status_display()
 
 
     list_display = ['qq','name',gender_dispaly,education_dispaly,'graduation_school','major',experience_dispaly,work_status_dispaly,'company','salary',source_dispaly
-                    ,course_dispaly,'status',consultant_dispaly,record_display
+                    ,course_dispaly,status_display,consultant_dispaly,record_display
                     ]
 
     show_search_form = True
@@ -106,22 +110,64 @@ class CustomerConfig(v1.StarkConfig):
 
 
     def delete_cource(self,request,customer_id,course_id):
+        """
+                删除当前用户感兴趣的课程
+                :param request:
+                :param customer_id:
+                :param course_id:
+                :return:
+                """
         customer=self.model_class.objects.filter(pk=customer_id).first()
         customer.course.remove(course_id)
         menu=self.request.GET.urlencode()
-        print(menu)
         params=QueryDict(mutable=True)
         params[self.search_key]=menu
-        print(params,'----------------------++++++++++++')
         url='%s?%s'%(self.get_list_url(),params.urlencode())
         return redirect(url)
 
 
+    def public_view(self,request):
+        """
+                公共客户资源
+                :param request:
+                :return:
+                """
+        # 条件：未报名 并且 （ 15天未成单(当前时间-15 > 接客时间) or  3天未跟进(当前时间-3天>最后跟进日期) ） Q对象
+        # status=2
+        #方法一
+        # con = Q()
+        # con1 = Q()
+        # con1.children.append(('status', 2))
+        #
+        # con2 = Q()
+        # con2.connector = 'OR'
+        # import datetime
+        # now_date = datetime.datetime.now().date()
+        # order_deadtime = now_date - datetime.timedelta(days=15)
+        # talk_deadtime = now_date - datetime.timedelta(days=3)
+        #
+        # con2.children.append(('recv_date__lt', order_deadtime))
+        # con2.children.append(('last_consult_date__lt', talk_deadtime))
+        #
+        # con.add(con1, 'AND')
+        # con.add(con2, 'AND')
+        # print(con, '------')
+        # if con:
+        #     customers = models.Customer.objects.filter(con).all()
+        #     print(customers, '*****')
+        #方法二:
+        import datetime
+        now_date = datetime.datetime.now().date()
+        order_deadtime = now_date - datetime.timedelta(days=15)
+        talk_deadtime = now_date - datetime.timedelta(days=3)
+        customers=models.Customer.objects.filter(Q(recv_date__lt=order_deadtime)|Q(last_consult_date__lt=talk_deadtime),status=2).all()
 
+        return render(request,'public_customer_view.html',{"customers":customers})
 
     def extra_url(self):
         app_model_class=self.model_class._meta.app_label,self.model_class._meta.model_name
         patterns=[
-            url(r'^(\d+)/(\d+)/delete_cource/$',self.wrap(self.delete_cource),name='%s_%s_dc'%app_model_class)
+            url(r'^(\d+)/(\d+)/delete_cource/$',self.wrap(self.delete_cource),name='%s_%s_dc'%app_model_class),
+            url(r'^public/$',self.wrap(self.public_view),name='%s_%s_public'%app_model_class)
         ]
         return patterns
