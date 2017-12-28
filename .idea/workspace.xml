@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e29d6789-3b0e-4e40-b8e6-ec6a97fde52a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app01/config/customerConfig.py" afterPath="$PROJECT_DIR$/app01/config/customerConfig.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/public_customer_view.html" afterPath="$PROJECT_DIR$/templates/public_customer_view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tiga.py" afterPath="$PROJECT_DIR$/tiga.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +18,7 @@
     <SUITE FILE_PATH="coverage/crm$tiga.coverage" NAME="tiga Coverage Results" MODIFIED="1514365176019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app01" />
     <SUITE FILE_PATH="coverage/crm$tests.coverage" NAME="tests Coverage Results" MODIFIED="1514430378093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app01" />
     <SUITE FILE_PATH="coverage/crm$aa.coverage" NAME="aa Coverage Results" MODIFIED="1514364494411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app01" />
-    <SUITE FILE_PATH="coverage/crm$tiga__1_.coverage" NAME="tiga (1) Coverage Results" MODIFIED="1514421795922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/crm$tiga__1_.coverage" NAME="tiga (1) Coverage Results" MODIFIED="1514447414323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -45,7 +46,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="public_customer_view.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="public_customer_view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/public_customer_view.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="207">
@@ -58,18 +59,28 @@
       <file leaf-file-name="customerConfig.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app01/config/customerConfig.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="202" column="37" lean-forward="false" selection-start-line="202" selection-start-column="33" selection-end-line="202" selection-end-column="37" />
+            <state relative-caret-position="-248">
+              <caret line="228" column="43" lean-forward="false" selection-start-line="228" selection-start-column="43" selection-end-line="228" selection-end-column="43" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <element signature="e#3340#3754#0" expanded="false" />
-                <element signature="e#3826#4293#0" expanded="false" />
-                <element signature="e#4339#5738#0" expanded="false" />
-                <element signature="e#4339#4410#1" expanded="false" />
-                <element signature="e#5784#6072#0" expanded="false" />
-                <element signature="e#7117#8483#0" expanded="false" />
-                <element signature="e#8521#9209#0" expanded="false" />
+                <element signature="e#3374#3788#0" expanded="false" />
+                <element signature="e#3860#4327#0" expanded="false" />
+                <element signature="e#4373#5772#0" expanded="false" />
+                <element signature="e#4373#4444#1" expanded="false" />
+                <element signature="e#5818#6106#0" expanded="false" />
+                <element signature="e#6162#7098#0" expanded="false" />
+                <element signature="e#9160#9848#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wx.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/stark/utils/message/wx.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,6 +97,18 @@
                 <element signature="e#8436#9379#0" expanded="false" />
                 <element signature="e#9419#10898#0" expanded="false" />
                 <element signature="e#9905#10286#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tiga.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tiga.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-108">
+              <caret line="65" column="36" lean-forward="false" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,7 +156,6 @@
         <option value="$PROJECT_DIR$/app01/aa.py" />
         <option value="$PROJECT_DIR$/app01/tiga.py" />
         <option value="$PROJECT_DIR$/readme" />
-        <option value="$PROJECT_DIR$/tiga.py" />
         <option value="$PROJECT_DIR$/app01/tests.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/stark/templates/stark/add.html" />
@@ -146,8 +168,9 @@
         <option value="$PROJECT_DIR$/templates/singleInput.html" />
         <option value="$PROJECT_DIR$/stark/templates/stark/base.html" />
         <option value="$PROJECT_DIR$/templates/viewScore.html" />
-        <option value="$PROJECT_DIR$/app01/config/customerConfig.py" />
         <option value="$PROJECT_DIR$/templates/public_customer_view.html" />
+        <option value="$PROJECT_DIR$/tiga.py" />
+        <option value="$PROJECT_DIR$/app01/config/customerConfig.py" />
       </list>
     </option>
   </component>
@@ -253,6 +276,27 @@
             <path>
               <item name="crm" type="b2602c69:ProjectViewProjectNode" />
               <item name="crm" type="462c0819:PsiDirectoryNode" />
+              <item name="stark" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crm" type="462c0819:PsiDirectoryNode" />
+              <item name="stark" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="message" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crm" type="462c0819:PsiDirectoryNode" />
+              <item name="stark" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="message" type="462c0819:PsiDirectoryNode" />
+              <item name="wx.py" type="8704e2dd:PyFileNode" />
+            </path>
+            <path>
+              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crm" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -277,6 +321,7 @@
       <recent name="D:\test\DjangoTest\crm\static" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\test\DjangoTest\crm\stark\utils" />
       <recent name="D:\test\DjangoTest\crm\stark" />
       <recent name="D:\test\DjangoTest\crm\static" />
       <recent name="D:\test\DjangoTest\crm" />
@@ -294,7 +339,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django server.crm">
+  <component name="RunManager" selected="Python.tiga (1)">
     <configuration name="Tiga" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -418,8 +463,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.tests" />
-        <item index="1" class="java.lang.String" itemvalue="Python.tiga (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.tiga (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.tests" />
         <item index="2" class="java.lang.String" itemvalue="Python.tiga" />
         <item index="3" class="java.lang.String" itemvalue="Python.aa" />
         <item index="4" class="java.lang.String" itemvalue="Python.Tiga" />
@@ -443,13 +488,13 @@
     <frame x="-6" y="1" width="1378" height="733" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19878604" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19878604" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.082701065" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34608695" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.73391306" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31911263" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -498,21 +543,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app01/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4788">
-          <caret line="286" column="0" lean-forward="false" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <element signature="e#6411#7267#0" expanded="false" />
-            <element signature="e#7303#8395#0" expanded="false" />
-            <element signature="e#8436#9379#0" expanded="false" />
-            <element signature="e#9419#10898#0" expanded="false" />
-            <element signature="e#9905#10286#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crm/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -714,16 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tiga.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app01/config/courseConfig.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -864,9 +884,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-          <folding>
-            <element signature="e#477#3371#0#HTML" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -883,8 +901,16 @@
         <state relative-caret-position="162">
           <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="9" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#0#44#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/public_customer_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -903,27 +929,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app01/config/customerConfig.py">
+    <entry file="file://$PROJECT_DIR$/tiga.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="202" column="37" lean-forward="false" selection-start-line="202" selection-start-column="33" selection-end-line="202" selection-end-column="37" />
+        <state relative-caret-position="-108">
+          <caret line="65" column="36" lean-forward="false" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#3340#3754#0" expanded="false" />
-            <element signature="e#3826#4293#0" expanded="false" />
-            <element signature="e#4339#5738#0" expanded="false" />
-            <element signature="e#4339#4410#1" expanded="false" />
-            <element signature="e#5784#6072#0" expanded="false" />
-            <element signature="e#7117#8483#0" expanded="false" />
-            <element signature="e#8521#9209#0" expanded="false" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/public_customer_view.html">
+    <entry file="file://$PROJECT_DIR$/app01/config/customerConfig.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        <state relative-caret-position="-248">
+          <caret line="228" column="43" lean-forward="false" selection-start-line="228" selection-start-column="43" selection-end-line="228" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#3374#3788#0" expanded="false" />
+            <element signature="e#3860#4327#0" expanded="false" />
+            <element signature="e#4373#5772#0" expanded="false" />
+            <element signature="e#4373#4444#1" expanded="false" />
+            <element signature="e#5818#6106#0" expanded="false" />
+            <element signature="e#6162#7098#0" expanded="false" />
+            <element signature="e#9160#9848#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stark/utils/message/wx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

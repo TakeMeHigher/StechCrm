@@ -1,5 +1,6 @@
 import datetime
 
+from django.db import transaction
 from django.db.models import Q
 from django.utils.safestring import mark_safe
 from django.shortcuts import redirect, HttpResponse, render
@@ -205,9 +206,6 @@ class CustomerConfig(v1.StarkConfig):
         models.CustomerDistribution.objects.create(user_id=current_usr_id,customer_id=cid,ctime=now_date)
         return HttpResponse('抢单成功')
 
-
-
-
     def singleInput_view(self,request):
         if request.method=='GET':
             form=SingleModelForm()
@@ -223,27 +221,38 @@ class CustomerConfig(v1.StarkConfig):
             form=SingleModelForm(data=request.POST)
             if form.is_valid():
                from tiga import Tiga
-               user_id=None
-               try:
-                   user_id=Tiga.get_sale_id()
-               except Exception as e:
-                   Tiga.reset()
 
-               now_date = datetime.datetime.now().date()
-               form.cleaned_data['consultant_id'] = user_id
-               form.cleaned_data['status'] = 2
-               form.cleaned_data['last_consult_date'] = now_date
-               form.cleaned_data['recv_date'] = now_date
-               course = form.cleaned_data.pop('course')
-               customer = models.Customer.objects.create(**form.cleaned_data)
-               print(form)
-               customer.course.add(*course)
-               print('.....')
-               models.CustomerDistribution.objects.create(customer=customer, user_id=user_id, ctime=now_date)
+               user_id=Tiga.get_sale_id()
+               if not user_id:
+                   return HttpResponse('无销售顾问,无法进行分配')
+               try:
+                   with transaction.atomic():
+                       now_date = datetime.datetime.now().date()
+                       # form.cleaned_data['consultant_id'] = user_id
+                       # form.cleaned_data['status'] = 2
+                       # form.cleaned_data['last_consult_date'] = now_date
+                       # form.cleaned_data['recv_date'] = now_date
+                       # course = form.cleaned_data.pop('course')
+                       # customer = models.Customer.objects.create(**form.cleaned_data)
+                       # print(form)
+                       # customer.course.add(*course)
+                       form.instance.consultant_id=user_id
+                       form.instance.last_consult_date=now_date
+                       form.instance.recv_date=now_date
+                       customer=form.save()
+                       print(customer)
+                       print('.....')
+                       models.CustomerDistribution.objects.create(customer=customer, user_id=user_id, ctime=now_date)
+
+
+               except Exception as e:
+                   Tiga.rollback_list.append(user_id)
+                   return HttpResponse('录入异常')
+
 
                return redirect('/stark/app01/customer/')
 
-
+            return render(request, 'singleInput.html', {'form': form})
 
 
     def extra_url(self):
