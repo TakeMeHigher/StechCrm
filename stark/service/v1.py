@@ -359,6 +359,24 @@ class StarkConfig(object):
 
         # -------------------------------------列表页面展示相关list_dispaly 结束--------------------------------------------------------------------
 
+
+     #-----------------------------------------排序-----------------------------------------------
+
+    order_list=[]
+
+    def get_order_list(self):
+        data=[]
+        if self.order_list:
+            data.extend(self.order_list)
+        return data
+
+
+
+     #-----------------------------------------排序 结束-----------------------------------------------
+
+
+
+
     # ---------------------------------------url相关-----------------------------------------------------
     # 总的url
     def get_urls(self):
@@ -439,7 +457,7 @@ class StarkConfig(object):
 
         # 获取当前类中的所有对象
         data_list = self.model_class.objects.filter(self.get_search_condition()).filter(
-            **combine_search_condition).all()
+            **combine_search_condition).order_by(*self.get_order_list()).all()
 
         if request.method == 'POST' and self.get_show_action():
             func_name_str = request.POST.get('list_action')

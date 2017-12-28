@@ -1,24 +1,13 @@
-{% load staticfiles %}
+{% extends 'stark/base.html' %}
 {% load change_form %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
-    <link rel="stylesheet" href="{% static 'stark/bootstrap/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'stark/css/stark-form.css' %}">
-</head>
-<body>
-<div class="container">
+
+{% block body %}
+
     <h1>添加页面</h1>
-{#    {% include 'stark/form.html' %}#}
+{# {% include 'stark/form.html' %}#}
     {% changeForm config form %}
 
     {#第一个form是自定义标签#}
 {#第2个form是后端传过来的form对象#}
-</div>
 
-</body>
-</html>
+{% endblock  %}

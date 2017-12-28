@@ -80,6 +80,8 @@ class CustomerConfig(v1.StarkConfig):
         , course_dispaly, status_display, consultant_dispaly, record_display
                     ]
 
+    order_list = ['-status']
+
     show_search_form = True
     search_fileds = ['qq__contains', 'name__contains', 'graduation_school__contains', 'major__contains',
                      'company__contains', 'salary__contains']
@@ -135,8 +137,8 @@ class CustomerConfig(v1.StarkConfig):
         :param request:
         :return:
         """
-        # 条件：未报名 并且 （ 15天未成单(当前时间-15 > 接客时间) or  3天未跟进(当前时间-3天>最后跟进日期) ） Q对象
-        # status=2
+        # 条件：未报名 status=2 并且 （15天未成单(当前时间-15 > 接客时间) or  3天未跟进(当前时间-3天>最后跟进日期) ） Q对象
+
         # 方法一
         # con = Q()
         # con1 = Q()
@@ -174,11 +176,10 @@ class CustomerConfig(v1.StarkConfig):
         :param request:
         :return:
         '''
-
         current_user_id = 5
 
         customers_list = models.CustomerDistribution.objects.filter(user_id=current_user_id).order_by('status')
-        print(customers_list, '---')
+
         return render(request, 'myuser.html', {'customers': customers_list})
 
     def competition_view(self, request, cid):
@@ -210,7 +211,37 @@ class CustomerConfig(v1.StarkConfig):
     def singleInput_view(self,request):
         if request.method=='GET':
             form=SingleModelForm()
-            return render(request,'')
+            return render(request,'singleInput.html',{'form':form})
+        else:
+            """客户表新增数据：
+                             - 获取该分配的课程顾问id
+                             - 当前时间
+                          客户分配表中新增数据
+                             - 获取新创建的客户ID
+                             - 顾问ID
+                          """
+            form=SingleModelForm(data=request.POST)
+            if form.is_valid():
+               from tiga import Tiga
+               user_id=None
+               try:
+                   user_id=Tiga.get_sale_id()
+               except Exception as e:
+                   Tiga.reset()
+
+               now_date = datetime.datetime.now().date()
+               form.cleaned_data['consultant_id'] = user_id
+               form.cleaned_data['status'] = 2
+               form.cleaned_data['last_consult_date'] = now_date
+               form.cleaned_data['recv_date'] = now_date
+               course = form.cleaned_data.pop('course')
+               customer = models.Customer.objects.create(**form.cleaned_data)
+               print(form)
+               customer.course.add(*course)
+               print('.....')
+               models.CustomerDistribution.objects.create(customer=customer, user_id=user_id, ctime=now_date)
+
+               return redirect('/stark/app01/customer/')
 
 
 

@@ -1,15 +1,7 @@
+{% extends 'stark/base.html' %}
 {% load staticfiles %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
-    <link rel="stylesheet" href="{% static '/bootstrap-3.3.7-dist/css/bootstrap.min.css' %}">
-    <script src="{% static 'jquery-3.2.1.min.js' %}"></script>
-</head>
-<body>
+{% block body %}
+
 <h1>选择班级</h1>
 <ul id="classList"  sid="{{ sid }}">
     {% for cls in cls_list %}
@@ -20,8 +12,11 @@
 
 <h1>成绩显示</h1>
 <div id="container" style="min-width:400px;height:400px"></div>
-</body>
-<script src="{% static 'highcharts.js' %}"></script>
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'jquery-3.2.1.min.js' %}"></script>>
+ <script src="{% static 'highcharts.js' %}"></script>
 <script>
     (function () {
      $("#classList>li").click(function () {
@@ -96,4 +91,4 @@
      });
     })()
 </script>
-</html>
+{% endblock  %}

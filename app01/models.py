@@ -189,7 +189,13 @@ class CustomerDistribution(models.Model):
     status = models.IntegerField(verbose_name='状态',choices=status_choices,default=1)
     memo = models.CharField(verbose_name='更多信息',max_length=255)
 
-
+class SaleRank(models.Model):
+    """
+    销售权重和数量
+    """
+    user = models.ForeignKey(to="UserInfo",limit_choices_to={'depart_id':1000})
+    num = models.IntegerField(verbose_name='数量')
+    weight = models.IntegerField(verbose_name='权重')
 
 class ConsultRecord(models.Model):
     """
