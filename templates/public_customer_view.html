@@ -15,7 +15,11 @@
       <td>{{ customer.qq }}</td>
       <td>{{ customer.name }}</td>
       <td>
+          {% if customer.consultant_id == current_user_id %}
+          <a  class="disabled">没有权限</a>
+          {% else %}
           <a href="/stark/app01/customer/{{ customer.id }}/competition/">抢单</a>
+          {% endif %}
       </td>
      </tr>
     {% endfor %}

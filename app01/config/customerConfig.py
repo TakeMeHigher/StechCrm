@@ -161,14 +161,14 @@ class CustomerConfig(v1.StarkConfig):
         #     customers = models.Customer.objects.filter(con).all()
         #     print(customers, '*****')
         # 方法二:
-
+        current_user_id=5
         now_date = datetime.datetime.now().date()
         order_deadtime = now_date - datetime.timedelta(days=15)
         talk_deadtime = now_date - datetime.timedelta(days=3)
         customers = models.Customer.objects.filter(
             Q(recv_date__lt=order_deadtime) | Q(last_consult_date__lt=talk_deadtime), status=2).all()
 
-        return render(request, 'public_customer_view.html', {"customers": customers})
+        return render(request, 'public_customer_view.html', {"customers": customers,'current_user_id':current_user_id})
 
     def myuser_view(self, request):
         '''
