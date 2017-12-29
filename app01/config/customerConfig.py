@@ -11,6 +11,11 @@ from django.forms import ModelForm
 
 from stark.service import v1
 from app01 import models
+from stark.utils import message
+#from tiga import  Tiga as t
+#from tiga1 import  Tiga
+
+
 
 
 class SingleModelForm(ModelForm):
@@ -177,7 +182,7 @@ class CustomerConfig(v1.StarkConfig):
         :param request:
         :return:
         '''
-        current_user_id = 5
+        current_user_id = request.session['user'].get("id")
 
         customers_list = models.CustomerDistribution.objects.filter(user_id=current_user_id).order_by('status')
 
@@ -220,8 +225,8 @@ class CustomerConfig(v1.StarkConfig):
                           """
             form=SingleModelForm(data=request.POST)
             if form.is_valid():
-               from tiga import Tiga
 
+               from tiga1 import Tiga
                user_id=Tiga.get_sale_id()
                if not user_id:
                    return HttpResponse('无销售顾问,无法进行分配')
@@ -243,16 +248,89 @@ class CustomerConfig(v1.StarkConfig):
                        print(customer)
                        print('.....')
                        models.CustomerDistribution.objects.create(customer=customer, user_id=user_id, ctime=now_date)
-
+                       body='给你分配新用户了'
+                       print(564123)
+                       message.send_message('分配新用户',body,'1789920207@qq.com','zjm')
 
                except Exception as e:
-                   Tiga.rollback_list.append(user_id)
+                   #Tiga.rollback(user_id)
                    return HttpResponse('录入异常')
 
 
                return redirect('/stark/app01/customer/')
 
             return render(request, 'singleInput.html', {'form': form})
+
+
+    def multiInput_view(self,request):
+        if request.method=='GET':
+            return render(request,'multiInput.html')
+        else:
+            from tiga1 import Tiga
+            user_id=Tiga.get_sale_id()
+            now_date=datetime.datetime.now().date()
+            fileObj=request.FILES.get('file')
+
+            with open('multiInput.xlsx','wb')as f:
+                for chuck in fileObj:
+                    f.write(chuck)
+
+            import xlrd
+            workbook=xlrd.open_workbook('multiInput.xlsx')
+            sheet=workbook.sheet_by_index(0)
+            maps={
+                0:'qq',
+                1:'name',
+                2:'gender',
+                3:'course',
+            }
+
+
+            for index in range(1,sheet.nrows):
+                row=sheet.row(index)
+                dic = {}
+                for i in maps:
+                    key = maps[i]
+                    cell = row[i]
+                    if i in (0,2):
+                        dic[key]=int(cell.value)
+                    elif i==1:
+                        dic[key] =cell.value
+                    else:
+                        course_id=cell.value
+                        course_list_str=course_id.split('_')
+                        course_list_int=[]
+                        for i in course_list_str:
+                            course_list_int.append(int(i))
+                        dic[key]=course_list_int
+
+
+
+                print(dic)
+                try:
+                    with transaction.atomic():
+
+                        dic['consultant_id']=user_id
+                        dic['recv_date']=now_date
+                        print(dic)
+                        print(type(dic['qq']))
+                        course_list=dic.pop('course')
+                        print(dic)
+                        print(course_list)
+                        customer=models.Customer.objects.create(**dic)
+                        customer.course.add(*course_list)
+                        print(customer)
+                        models.CustomerDistribution.objects.create(customer=customer,user_id=user_id,ctime=now_date)
+
+                except Exception as e:
+                    Tiga.rollback(user_id)
+                    return HttpResponse('批量导入出现异常')
+
+
+
+
+
+            return HttpResponse('ok')
 
 
     def extra_url(self):
@@ -263,5 +341,6 @@ class CustomerConfig(v1.StarkConfig):
             url(r'^myuser/$', self.wrap(self.myuser_view), name='%s_%s_myuser' % app_model_class),
             url(r'^(\d+)/competition/$', self.wrap(self.competition_view), name="%s_%s_competition" % app_model_class),
             url(r'^singleInput/$', self.wrap(self.singleInput_view), name='%s_%s_singleInput' % app_model_class),
+            url(r'^multiInput/$', self.wrap(self.multiInput_view), name='%s_%s_multiInput' % app_model_class),
         ]
         return patterns

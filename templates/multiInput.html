@@ -1,0 +1,10 @@
+{% extends 'stark/base.html' %}
+{% block body %}
+
+    <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+        <input type="file" name="file" >
+        <button class="btn btn-primary" type="submit">提交 </button>
+    </form>
+
+{% endblock %}

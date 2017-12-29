@@ -32,6 +32,7 @@ class StudyRecordConfig(v1.StarkConfig):
 
     combine_seach = [
         v1.FilterOption('course_record'),
+        v1.FilterOption('student'),
     ]
 
 
