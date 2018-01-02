@@ -10,9 +10,10 @@ from django.forms import widgets
 
 from  stark.service import v1
 from app01 import models
+from  app01.permission.basePermission import BasePermission
 
 
-class CourseRecordConfig(v1.StarkConfig):
+class CourseRecordConfig(BasePermission,v1.StarkConfig):
     def teacher_display(self,obj=None,is_head=False):
         if is_head:
             return '老师'

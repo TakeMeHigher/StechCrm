@@ -2,8 +2,10 @@ from django.shortcuts import  redirect
 
 
 from stark.service import v1
+from  app01.permission.basePermission import BasePermission
 
-class ConsultRecordConfig(v1.StarkConfig):
+
+class ConsultRecordConfig(BasePermission,v1.StarkConfig):
     def customer_display(self,obj=None,is_head=False):
         if is_head:
             return '所咨询客户'

@@ -1,8 +1,9 @@
 from django.shortcuts import redirect
 
 from stark.service import v1
+from  app01.permission.basePermission import BasePermission
 
-class UserInfoConfig(v1.StarkConfig):
+class UserInfoConfig(BasePermission,v1.StarkConfig):
     def depart_display(self,obj=None,is_head=False):
         if is_head:
             return '部门'

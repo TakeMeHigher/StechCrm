@@ -1,5 +1,7 @@
 from django.shortcuts import render,HttpResponse,redirect
-from app01 import models
+
+from rbac import models
+from rbac.service.init_permission import init_permission
 # Create your views here.
 
 def login(request):
@@ -9,17 +11,14 @@ def login(request):
         name=request.POST.get('username')
         pwd=request.POST.get('password')
         print(name,pwd)
-        user=models.UserInfo.objects.filter(username=name,password=pwd).first()
-        stu=models.Student.objects.filter(username=name,password=pwd).first()
-
+        user=models.User.objects.filter(username=name,password=pwd).first()
         if user:
-            request.session['user']={'name':name,'id':user.id}
-            return HttpResponse('ok')
-        elif stu:
-            print(123)
-            request.session['stu'] = {'name': name, 'id': stu.id}
-            return redirect('/stark/app01/studyrecord/?student=%s'%stu.id)
-        else:
-            return render(request,'login.html',{"msg":'用户名或密码不正确'})
+            print(user.userinfo)
+            request.session['user']={'username':name,'id':user.id,'userinfo_id':user.userinfo.id,'uname':user.userinfo.name}
+            init_permission(user,request)
+            return redirect('/index/')
+        return redirect('/login/')
 
 
+def index(request):
+    return render(request,'index.html')

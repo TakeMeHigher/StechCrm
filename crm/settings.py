@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app01.apps.App01Config',
     'stark.apps.StarkConfig',
+    'rbac.apps.RbacConfig'
 ]
 
 MIDDLEWARE = [
@@ -47,7 +48,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'app01.middlewares.permission.PerMiddleware'
+   # 'app01.middlewares.permission.PerMiddleware'
+    'rbac.middlewares.rbac.LoginMiddleware',
+    'rbac.middlewares.rbac.RbacMiddleware',
 ]
 
 ROOT_URLCONF = 'crm.urls'
@@ -128,7 +131,10 @@ MESSAGE_CLASSES = [
 
 ]
 
+# ######################### rbac ############################
+PERMISSIONS_URL_DICT_KEY="permission_dict_url"
+PERMISSIONS_MENU_KEY="permissions_menu_key"
 VALID_URL = [
     "/login/",
-    "/admin.*"
+    "/index/"
 ]

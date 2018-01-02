@@ -1,9 +1,10 @@
 from django.shortcuts import redirect
 
 from stark.service import v1
+from  app01.permission.basePermission import BasePermission
 
 
-class PaymentRecordConfig(v1.StarkConfig):
+class PaymentRecordConfig(BasePermission,v1.StarkConfig):
     def customer_display(self,obj=None,is_head=False):
         if is_head:
             return '客户'

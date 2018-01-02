@@ -1,10 +1,11 @@
 from  django.shortcuts import redirect
 
 from stark.service import v1
+from  app01.permission.basePermission import BasePermission
 
 
 
-class ClassListConfig(v1.StarkConfig):
+class ClassListConfig(BasePermission,v1.StarkConfig):
     def school_display(self,obj=None,is_head=False):
         if is_head:
             return '校区'

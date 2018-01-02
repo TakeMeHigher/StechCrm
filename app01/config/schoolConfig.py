@@ -1,9 +1,9 @@
 from django.shortcuts import redirect
 
 from  stark.service import v1
+from  app01.permission.basePermission import BasePermission
 
-
-class SchoolConfig(v1.StarkConfig):
+class SchoolConfig(BasePermission,v1.StarkConfig):
     list_display = ['title']
     show_search_form = True
     search_fileds = ['title']

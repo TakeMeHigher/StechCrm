@@ -6,9 +6,10 @@ from django.utils.safestring import mark_safe
 
 
 from stark.service import v1
+from  app01.permission.basePermission import BasePermission
 
 
-class DepartmentConfig(v1.StarkConfig):
+class DepartmentConfig(BasePermission,v1.StarkConfig):
     list_display=['title','code']
     show_search_form=True
     search_fileds=['title__contains','code__contains']

@@ -1,10 +1,10 @@
 
 from stark.service import v1
 from app01 import models
+from  app01.permission.basePermission import BasePermission
 
 
-
-class StudyRecordConfig(v1.StarkConfig):
+class StudyRecordConfig(BasePermission,v1.StarkConfig):
 
 
     def student_display(self,obj=None,is_head=False):

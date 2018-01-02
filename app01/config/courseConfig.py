@@ -1,9 +1,10 @@
 from django.shortcuts import redirect
 
 from stark.service import v1
+from  app01.permission.basePermission import BasePermission
 
 
-class CourseConfig(v1.StarkConfig):
+class CourseConfig(BasePermission,v1.StarkConfig):
     list_display = ['name']
     show_search_form = True
     search_fileds=['name']

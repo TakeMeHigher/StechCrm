@@ -12,6 +12,7 @@ from django.http import StreamingHttpResponse
 from stark.service import v1
 from app01 import models
 from stark.utils import message
+from  app01.permission.basePermission import BasePermission
 
 
 # from tiga import  Tiga as t
@@ -26,7 +27,7 @@ class SingleModelForm(ModelForm):
         exclude = ['consultant', 'status', 'recv_date', 'last_consult_date']
 
 
-class CustomerConfig(v1.StarkConfig):
+class CustomerConfig(BasePermission,v1.StarkConfig):
     def gender_dispaly(self, obj=None, is_head=False):
         if is_head:
             return '性别'

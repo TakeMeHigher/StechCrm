@@ -1,0 +1,5 @@
+{% extends 'stark/base.html' %}
+
+{% block body %}
+<h3>欢迎你{{ request.session.user.username }}</h3>
+{% endblock body %}

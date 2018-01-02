@@ -9,9 +9,10 @@ from django.conf.urls import url
 
 from stark.service import v1
 from app01 import  models
+from  app01.permission.basePermission import BasePermission
 
 
-class StudentConfig(v1.StarkConfig):
+class StudentConfig(BasePermission,v1.StarkConfig):
 
     def extra_url(self):
         app_model_name=self.model_class._meta.app_label,self.model_class._meta.model_name
