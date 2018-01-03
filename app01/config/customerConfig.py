@@ -2,6 +2,7 @@ import datetime
 
 from django.db import transaction
 from django.db.models import Q
+from django.utils.http import urlquote
 from django.utils.safestring import mark_safe
 from django.shortcuts import redirect, HttpResponse, render
 from django.http import QueryDict
@@ -342,7 +343,7 @@ class CustomerConfig(BasePermission,v1.StarkConfig):
         the_file_name = "模板.xlsx"
         response = StreamingHttpResponse(file_iterator(the_file_name))
         response['Content-Type'] = 'application/octet-stream'
-        response['Content-Disposition'] = 'attachment;filename="{0}"'.format(the_file_name)
+        response['Content-Disposition'] = 'attachment;filename="{0}"'.format(urlquote(the_file_name))
 
         return response
 

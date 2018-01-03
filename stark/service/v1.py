@@ -82,6 +82,7 @@ class FilterRow(object):
                     yield mark_safe('<a href="{0}">{1}</a>'.format(url, text))
 
             else:
+
                 # 多选
                 _parms = copy.deepcopy(params)
                 id_list = _parms.getlist(self.option.field_name)

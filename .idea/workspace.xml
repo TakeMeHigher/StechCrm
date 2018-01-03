@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e29d6789-3b0e-4e40-b8e6-ec6a97fde52a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/b5373ee1-9f61-4937-ab05-85c6e797a48e/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/b5373ee1-9f61-4937-ab05-85c6e797a48e/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/b5373ee1-9f61-4937-ab05-85c6e797a48e/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/b5373ee1-9f61-4937-ab05-85c6e797a48e/_metadata_/metadata.values.at" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/b5373ee1-9f61-4937-ab05-85c6e797a48e.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/b5373ee1-9f61-4937-ab05-85c6e797a48e.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app01/config/classListConfig.py" afterPath="$PROJECT_DIR$/app01/config/classListConfig.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app01/config/consultRecordConfig.py" afterPath="$PROJECT_DIR$/app01/config/consultRecordConfig.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app01/config/courseConfig.py" afterPath="$PROJECT_DIR$/app01/config/courseConfig.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app01/config/courseRecordConfig.py" afterPath="$PROJECT_DIR$/app01/config/courseRecordConfig.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app01/config/customerConfig.py" afterPath="$PROJECT_DIR$/app01/config/customerConfig.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app01/config/deparentConfig.py" afterPath="$PROJECT_DIR$/app01/config/deparentConfig.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app01/config/paymentRecordConfig.py" afterPath="$PROJECT_DIR$/app01/config/paymentRecordConfig.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app01/config/schoolConfig.py" afterPath="$PROJECT_DIR$/app01/config/schoolConfig.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app01/config/studentConfig.py" afterPath="$PROJECT_DIR$/app01/config/studentConfig.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app01/config/studyRecordConfig.py" afterPath="$PROJECT_DIR$/app01/config/studyRecordConfig.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app01/config/userinfoConfig.py" afterPath="$PROJECT_DIR$/app01/config/userinfoConfig.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app01/models.py" afterPath="$PROJECT_DIR$/app01/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app01/views.py" afterPath="$PROJECT_DIR$/app01/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crm/settings.py" afterPath="$PROJECT_DIR$/crm/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crm/urls.py" afterPath="$PROJECT_DIR$/crm/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stark/service/v1.py" afterPath="$PROJECT_DIR$/stark/service/v1.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -66,124 +50,116 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="customerConfig.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app01/config/customerConfig.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="194" column="0" lean-forward="false" selection-start-line="183" selection-start-column="2" selection-end-line="194" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#3625#4039#0" expanded="false" />
+                <element signature="e#4111#4578#0" expanded="false" />
+                <element signature="e#4624#6049#0" expanded="false" />
+                <element signature="e#4624#4695#1" expanded="false" />
+                <element signature="e#6095#6415#0" expanded="false" />
+                <element signature="e#6471#7442#0" expanded="false" />
+                <element signature="e#7493#9671#0" expanded="false" />
+                <element signature="e#9721#12079#0" expanded="false" />
+                <element signature="e#12131#12728#0" expanded="false" />
+                <element signature="e#12763#13679#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/readme">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1722">
+              <caret line="82" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="courseRecordConfig.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app01/config/courseRecordConfig.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="37" column="4" lean-forward="false" selection-start-line="37" selection-start-column="4" selection-end-line="70" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+                <element signature="e#1111#2494#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inputScore.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/inputScore.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crm/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="57">
               <caret line="51" column="3" lean-forward="false" selection-start-line="51" selection-start-column="3" selection-end-line="52" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userinfoConfig.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app01/config/userinfoConfig.py">
+      <file leaf-file-name="menuList.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rbac/templates/menuList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="22" />
+            <state relative-caret-position="210">
+              <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="basePermission.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app01/permission/basePermission.py">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/stark/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-125">
-              <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+            <state relative-caret-position="42">
+              <caret line="11" column="54" lean-forward="false" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="classListConfig.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app01/config/classListConfig.py">
+      <file leaf-file-name="studyRecordConfig.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app01/config/studyRecordConfig.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+            <state relative-caret-position="756">
+              <caret line="38" column="1" lean-forward="false" selection-start-line="38" selection-start-column="1" selection-end-line="72" selection-end-column="63" />
               <folding>
-                <element signature="e#0#38#0" expanded="true" />
+                <element signature="e#1#29#0" expanded="true" />
+                <element signature="e#993#1110#0" expanded="false" />
+                <element signature="e#1181#1299#0" expanded="false" />
+                <element signature="e#1368#1484#0" expanded="false" />
+                <element signature="e#1551#1669#0" expanded="false" />
+                <element signature="e#1745#1868#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="courseRecordConfig.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app01/config/courseRecordConfig.py">
+      <file leaf-file-name="tiga.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tiga.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1476">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="studentConfig.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app01/config/studentConfig.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rbac.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rbac/middlewares/rbac.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+            <state relative-caret-position="504">
+              <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="v1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stark/service/v1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="638" column="0" lean-forward="false" selection-start-line="638" selection-start-column="0" selection-end-line="638" selection-end-column="0" />
-              <folding>
-                <element signature="e#429#1406#0" expanded="false" />
-                <element signature="e#1438#3938#0" expanded="false" />
-                <element signature="e#3999#7390#0" expanded="false" />
-                <element signature="e#12392#12591#0" expanded="false" />
-                <element signature="e#12744#13334#0" expanded="false" />
-                <element signature="e#13401#13410#0" expanded="false" />
-                <element signature="e#13454#13476#0" expanded="false" />
-                <element signature="e#13529#13689#0" expanded="false" />
-                <element signature="e#13741#13892#0" expanded="false" />
-                <element signature="e#13950#14119#0" expanded="false" />
-                <element signature="e#14177#14344#0" expanded="false" />
-                <element signature="e#14654#14928#0" expanded="false" />
-                <element signature="e#15007#17435#0" expanded="false" />
-                <element signature="e#17506#22410#0" expanded="false" />
-                <element signature="e#22482#23179#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stark.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app01/stark.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rbac.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rbac/templatetags/rbac.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1554">
-              <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -212,7 +188,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/stark/templates/stark/changelist.html" />
-        <option value="$PROJECT_DIR$/stark/service/v1.py" />
         <option value="$PROJECT_DIR$/stark/templates/stark/edit.html" />
         <option value="$PROJECT_DIR$/templates/inputScore.html" />
         <option value="$PROJECT_DIR$/stark/static/stark/css/stark-form.css" />
@@ -250,7 +225,6 @@
         <option value="$PROJECT_DIR$/app01/config/consultRecordConfig.py" />
         <option value="$PROJECT_DIR$/app01/config/courseConfig.py" />
         <option value="$PROJECT_DIR$/app01/config/courseRecordConfig.py" />
-        <option value="$PROJECT_DIR$/app01/config/customerConfig.py" />
         <option value="$PROJECT_DIR$/app01/config/deparentConfig.py" />
         <option value="$PROJECT_DIR$/app01/config/paymentRecordConfig.py" />
         <option value="$PROJECT_DIR$/app01/config/schoolConfig.py" />
@@ -258,10 +232,12 @@
         <option value="$PROJECT_DIR$/app01/config/studyRecordConfig.py" />
         <option value="$PROJECT_DIR$/app01/config/userinfoConfig.py" />
         <option value="$PROJECT_DIR$/rbac/service/init_permission.py" />
-        <option value="$PROJECT_DIR$/crm/settings.py" />
         <option value="$PROJECT_DIR$/rbac/templatetags/rbac.py" />
         <option value="$PROJECT_DIR$/rbac/middlewares/rbac.py" />
         <option value="$PROJECT_DIR$/app01/permission/basePermission.py" />
+        <option value="$PROJECT_DIR$/stark/service/v1.py" />
+        <option value="$PROJECT_DIR$/app01/config/customerConfig.py" />
+        <option value="$PROJECT_DIR$/crm/settings.py" />
       </list>
     </option>
   </component>
@@ -271,7 +247,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1366" />
     <option name="height" value="728" />
   </component>
@@ -293,6 +269,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -382,27 +359,14 @@
               <item name="crm" type="b2602c69:ProjectViewProjectNode" />
               <item name="crm" type="462c0819:PsiDirectoryNode" />
               <item name="stark" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="crm" type="b2602c69:ProjectViewProjectNode" />
               <item name="crm" type="462c0819:PsiDirectoryNode" />
               <item name="stark" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="v1.py" type="8704e2dd:PyFileNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crm" type="462c0819:PsiDirectoryNode" />
-              <item name="stark" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crm" type="462c0819:PsiDirectoryNode" />
-              <item name="stark" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="stark" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="message" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="crm" type="b2602c69:ProjectViewProjectNode" />
@@ -419,7 +383,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -604,19 +567,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24205749" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24508321" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5460751" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12481089" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43515357" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29863483" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8481229" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -635,9 +599,9 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29863483" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43515357" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8481229" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24205749" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23373677" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12481089" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -656,203 +620,12 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tiga.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="51" column="44" lean-forward="false" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/48d4f053/b5373ee1-9f61-4937-ab05-85c6e797a48e/main.app01_customer">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python36/Lib/site-packages/xlrd/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/48d4f053/b5373ee1-9f61-4937-ab05-85c6e797a48e/main.app01_customerdistribution">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/读取excel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stark/templates/stark/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stark/templatetags/change_form.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stark/templates/stark/form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="28" column="44" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rbac/static/rbac/rbac.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/48d4f053/b5373ee1-9f61-4937-ab05-85c6e797a48e/main.rbac_menu">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rbac/testaa.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-643">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/48d4f053/b5373ee1-9f61-4937-ab05-85c6e797a48e/main.app01_userinfo">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/48d4f053/b5373ee1-9f61-4937-ab05-85c6e797a48e/main.auth_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rbac/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crm/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rbac/stark.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#20#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rbac/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#48#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app01/config/consultRecordConfig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app01/config/courseConfig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app01/config/customerConfig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="59" />
-          <folding>
-            <element signature="e#3586#4000#0" expanded="false" />
-            <element signature="e#4072#4539#0" expanded="false" />
-            <element signature="e#4585#4656#1" expanded="false" />
-            <element signature="e#7616#7852#1" expanded="false" />
-            <element signature="e#12092#12679#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app01/config/deparentConfig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app01/config/paymentRecordConfig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app01/config/schoolConfig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app01/config/studyRecordConfig.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="59" />
@@ -867,55 +640,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app01/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2748">
-          <caret line="257" column="9" lean-forward="true" selection-start-line="257" selection-start-column="9" selection-end-line="257" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <element signature="e#6440#7296#0" expanded="false" />
-            <element signature="e#7332#8424#0" expanded="false" />
-            <element signature="e#8465#9408#0" expanded="false" />
-            <element signature="e#9448#10927#0" expanded="false" />
-            <element signature="e#9934#10315#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stark/templates/stark/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="21" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stark/templates/stark/changelist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rbac/templates/menuList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app01/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
           <caret line="28" column="23" lean-forward="false" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/stark/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -931,7 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -939,41 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
           <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app01/config/studentConfig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stark/service/v1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="638" column="0" lean-forward="false" selection-start-line="638" selection-start-column="0" selection-end-line="638" selection-end-column="0" />
-          <folding>
-            <element signature="e#429#1406#0" expanded="false" />
-            <element signature="e#1438#3938#0" expanded="false" />
-            <element signature="e#3999#7390#0" expanded="false" />
-            <element signature="e#12392#12591#0" expanded="false" />
-            <element signature="e#12744#13334#0" expanded="false" />
-            <element signature="e#13401#13410#0" expanded="false" />
-            <element signature="e#13454#13476#0" expanded="false" />
-            <element signature="e#13529#13689#0" expanded="false" />
-            <element signature="e#13741#13892#0" expanded="false" />
-            <element signature="e#13950#14119#0" expanded="false" />
-            <element signature="e#14177#14344#0" expanded="false" />
-            <element signature="e#14654#14928#0" expanded="false" />
-            <element signature="e#15007#17435#0" expanded="false" />
-            <element signature="e#17506#22410#0" expanded="false" />
-            <element signature="e#22482#23179#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -981,7 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1028,19 +719,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crm/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="51" column="3" lean-forward="false" selection-start-line="51" selection-start-column="3" selection-end-line="52" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rbac/templatetags/rbac.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1554">
           <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1052,38 +734,316 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rbac/middlewares/rbac.py">
+    <entry file="file://$PROJECT_DIR$/app01/config/classListConfig.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+        <state relative-caret-position="147">
+          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stark/templatetags/change_form.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="52" column="23" lean-forward="false" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stark/templates/stark/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stark/templates/stark/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="21" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stark/templates/stark/changelist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stark/templates/stark/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="22" lean-forward="true" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stark/templates/stark/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="14" column="144" lean-forward="false" selection-start-line="14" selection-start-column="138" selection-end-line="14" selection-end-column="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stark/templates/stark/popResponse.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python36/Lib/site-packages/django/http/request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2847">
+          <caret line="374" column="8" lean-forward="false" selection-start-line="374" selection-start-column="8" selection-end-line="374" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stark/service/v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="652" column="5" lean-forward="false" selection-start-line="652" selection-start-column="4" selection-end-line="652" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app01/config/studentConfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1008">
+          <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app01/permission/basePermission.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app01/config/paymentRecordConfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app01/config/consultRecordConfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app01/config/courseConfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stark/utils/message/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stark/utils/message/wx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stark/utils/message/msg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stark/utils/message/email.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stark/utils/message/dingding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stark/utils/message/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="17" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app01/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4536">
+          <caret line="257" column="9" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="312" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#6440#7296#0" expanded="false" />
+            <element signature="e#7332#8424#0" expanded="false" />
+            <element signature="e#8465#9408#0" expanded="false" />
+            <element signature="e#9448#10927#0" expanded="false" />
+            <element signature="e#9934#10315#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rbac/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiga1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app01/permission/basePermission.py">
+    <entry file="file://$PROJECT_DIR$/tiga.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-125">
-          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        <state relative-caret-position="504">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app01/config/customerConfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="194" column="0" lean-forward="false" selection-start-line="183" selection-start-column="2" selection-end-line="194" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#3625#4039#0" expanded="false" />
+            <element signature="e#4111#4578#0" expanded="false" />
+            <element signature="e#4624#6049#0" expanded="false" />
+            <element signature="e#4624#4695#1" expanded="false" />
+            <element signature="e#6095#6415#0" expanded="false" />
+            <element signature="e#6471#7442#0" expanded="false" />
+            <element signature="e#7493#9671#0" expanded="false" />
+            <element signature="e#9721#12079#0" expanded="false" />
+            <element signature="e#12131#12728#0" expanded="false" />
+            <element signature="e#12763#13679#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1722">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app01/config/classListConfig.py">
+    <entry file="file://$PROJECT_DIR$/app01/config/studyRecordConfig.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        <state relative-caret-position="756">
+          <caret line="38" column="1" lean-forward="false" selection-start-line="38" selection-start-column="1" selection-end-line="72" selection-end-column="63" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#1#29#0" expanded="true" />
+            <element signature="e#993#1110#0" expanded="false" />
+            <element signature="e#1181#1299#0" expanded="false" />
+            <element signature="e#1368#1484#0" expanded="false" />
+            <element signature="e#1551#1669#0" expanded="false" />
+            <element signature="e#1745#1868#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app01/config/courseRecordConfig.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1476">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="59" />
+        <state relative-caret-position="525">
+          <caret line="37" column="4" lean-forward="false" selection-start-line="37" selection-start-column="4" selection-end-line="70" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#1111#2494#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/inputScore.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rbac/middlewares/rbac.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crm/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="51" column="3" lean-forward="false" selection-start-line="51" selection-start-column="3" selection-end-line="52" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rbac/templates/menuList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rbac/static/rbac/rbac.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/stark/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="11" column="54" lean-forward="false" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
           <folding />
         </state>
       </provider>
